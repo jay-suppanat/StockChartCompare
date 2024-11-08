@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		65101D462CDDCC9900D43C86 /* DGCharts in Frameworks */ = {isa = PBXBuildFile; productRef = 65101D452CDDCC9900D43C86 /* DGCharts */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		65C7C2D92CDDBEAF0020AC8B /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -65,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65101D462CDDCC9900D43C86 /* DGCharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +130,7 @@
 			);
 			name = StockChartDiff;
 			packageProductDependencies = (
+				65101D452CDDCC9900D43C86 /* DGCharts */,
 			);
 			productName = StockChartDiff;
 			productReference = 65C7C2C22CDDBEAD0020AC8B /* StockChartDiff.app */;
@@ -208,6 +214,9 @@
 			);
 			mainGroup = 65C7C2B92CDDBEAD0020AC8B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				65101D442CDDCC9900D43C86 /* XCRemoteSwiftPackageReference "Charts" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 65C7C2C32CDDBEAD0020AC8B /* Products */;
 			projectDirPath = "";
@@ -569,6 +578,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		65101D442CDDCC9900D43C86 /* XCRemoteSwiftPackageReference "Charts" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ChartsOrg/Charts.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		65101D452CDDCC9900D43C86 /* DGCharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 65101D442CDDCC9900D43C86 /* XCRemoteSwiftPackageReference "Charts" */;
+			productName = DGCharts;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 65C7C2BA2CDDBEAD0020AC8B /* Project object */;
 }
